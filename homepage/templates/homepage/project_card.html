@@ -1,0 +1,30 @@
+{% load static %}
+<div class="card" data-aos="fade-up" data-aos-duration="1000" style="margin: 1em;">
+    <img alt="code, html, digital" class="card-img-top w-100 d-block" src="{{ project.thumbnail.url }}"/>
+    <div class="card-body">
+        <h4 class="card-title" style="text-decoration:  underline;">
+            {{ project.title }}
+        </h4>
+        <h6 class="card-subtitle text-body-secondary my-2">
+            {{ project.subtitle }}
+        </h6>
+        <p class="card-text">
+            {{ project.description | safe }}
+        </p>
+        <div class="row gx-1 gy-1">
+            {% for link in project.links.all %}
+            <div class="col">
+                <a class="btn btn-primary" href="{{ link.url }}" target="_blank">
+                    {{ link.title }}
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<script src="{% static 'homepage/assets/js/aos.min.js' %}">
+</script>
+<script src="{% static 'homepage/assets/js/bs-init.js' %}">
+</script>
+<script src="{% static 'homepage/assets/js/image_mode.js' %}">
+</script>

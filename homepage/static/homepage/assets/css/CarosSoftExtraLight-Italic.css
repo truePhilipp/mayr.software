@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'CarosSoftExtraLight-Italic';
+	src: url(../fonts/CarosSoftExtraLight-Italic-f8b60f781844d5d26e98002b860a78db.woff2) format('woff2'),
+	url(../fonts/CarosSoftExtraLight-Italic-80cd91a07efe9a622b779026483c6fb7.woff) format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
